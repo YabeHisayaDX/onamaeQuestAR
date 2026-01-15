@@ -14,7 +14,7 @@ os.environ["ONNXRUNTIME_LOG_LEVEL"] = "3"
 import onnxruntime
 from insightface.app import FaceAnalysis
 
-UNITY_IP = "192.168.137.205"  # Quest3のIPあどれす
+UNITY_IP = "192.168.137.205"  # Quest3のIPアドレス
 PORT = 6002
 CAMERA_ID = 1                 # 外部カメラ
 JPEG_QUALITY = 90
@@ -267,4 +267,5 @@ while True:
 
     except Exception as e:
         print(f"Unity待機中... ({e})")
+
         time.sleep(2)
